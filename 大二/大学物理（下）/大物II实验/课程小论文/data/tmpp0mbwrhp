@@ -1,0 +1,114 @@
+{
+  "@context": "http://schema.org",
+  "@id": "https://doi.org/10.7939/DVN/XCRNHN",
+  "@type": "Dataset",
+  "author": [
+    {
+      "affiliation": "(University of Alberta)",
+      "name": "Nixon, Christopher"
+    }
+  ],
+  "creator": [
+    {
+      "affiliation": "(University of Alberta)",
+      "name": "Nixon, Christopher"
+    }
+  ],
+  "dateModified": "2021-09-22",
+  "datePublished": "2021-09-22",
+  "description": [
+    "Software package for extracting waveforms from noisy ultrasonic waveform data"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentSize": 5415,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "correlation loop modified..m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 5663,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "correlation loop.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 5453,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "Correlation.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 5663,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "correlation_loop.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 5415,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "correlation_loop_modified.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 18148,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "corrsweep.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 21758,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "corrsweep4avg.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 18136,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "corrsweep_mod.m"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 10980010,
+      "description": "",
+      "fileFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "name": "Ultrasonic Processing report.docx"
+    },
+    {
+      "@type": "DataDownload",
+      "contentSize": 760,
+      "description": "",
+      "fileFormat": "text/x-matlab",
+      "name": "VpVs_plotter_sweep_and_.m"
+    }
+  ],
+  "identifier": "https://doi.org/10.7939/DVN/XCRNHN",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Borealis",
+    "url": "https://borealisdata.ca"
+  },
+  "keywords": [
+    "Physics"
+  ],
+  "license": "https://borealisdata.ca/api/datasets/:persistentId/versions/1.0/customlicense?persistentId=doi:10.7939/DVN/XCRNHN",
+  "name": "Matlab code for ultrasonic wavespeed analysis",
+  "provider": {
+    "@type": "Organization",
+    "name": "Borealis"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Borealis"
+  },
+  "version": "1"
+}

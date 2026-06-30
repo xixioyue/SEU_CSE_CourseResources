@@ -1,0 +1,214 @@
+Simulator report for LAMP
+Tue May 28 00:24:03 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 45 nodes     ;
+; Simulation Coverage         ;      93.33 % ;
+; Total Number of Transitions ; 1793         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5E144C8  ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Timing          ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; SIGNAL_LAMP.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport       ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport       ; Transport     ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.33 % ;
+; Total nodes checked                                 ; 45           ;
+; Total output ports checked                          ; 45           ;
+; Total output ports with complete 1/0-value coverage ; 42           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 3            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |SIGNAL_LAMP|74161:inst1|f74161:sub|9             ; |SIGNAL_LAMP|74161:inst1|f74161:sub|9             ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|110  ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|110  ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|99   ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|99   ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|87   ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|87   ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|inst6~0                    ; |SIGNAL_LAMP|LAMP:inst|inst6~0                    ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|inst5                      ; |SIGNAL_LAMP|LAMP:inst|inst5                      ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|9    ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|9    ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|99  ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|99  ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|87  ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|87  ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|inst11                     ; |SIGNAL_LAMP|LAMP:inst|inst11                     ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|9   ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|9   ; q                ;
+; |SIGNAL_LAMP|LAMP:inst|inst12                     ; |SIGNAL_LAMP|LAMP:inst|inst12                     ; combout          ;
+; |SIGNAL_LAMP|74161:inst1|f74161:sub|77            ; |SIGNAL_LAMP|74161:inst1|f74161:sub|77            ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|108  ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|108  ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|98   ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|98   ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|86   ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|86   ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|inst9~0                    ; |SIGNAL_LAMP|LAMP:inst|inst9~0                    ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|98  ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|98  ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|86  ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|86  ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|9~0 ; |SIGNAL_LAMP|LAMP:inst|74161:inst1|f74161:sub|9~0 ; combout          ;
+; |SIGNAL_LAMP|74161:inst1|f74161:sub|86~0          ; |SIGNAL_LAMP|74161:inst1|f74161:sub|86~0          ; combout          ;
+; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|9~0  ; |SIGNAL_LAMP|LAMP:inst|74161:inst|f74161:sub|9~0  ; combout          ;
+; |SIGNAL_LAMP|LED0~output                          ; |SIGNAL_LAMP|LED0~output                          ; o                ;
+; |SIGNAL_LAMP|LED0                                 ; |SIGNAL_LAMP|LED0                                 ; padout           ;
+; |SIGNAL_LAMP|LED1~output                          ; |SIGNAL_LAMP|LED1~output                          ; o                ;
+; |SIGNAL_LAMP|LED1                                 ; |SIGNAL_LAMP|LED1                                 ; padout           ;
+; |SIGNAL_LAMP|Q0[3]~output                         ; |SIGNAL_LAMP|Q0[3]~output                         ; o                ;
+; |SIGNAL_LAMP|Q0[3]                                ; |SIGNAL_LAMP|Q0[3]                                ; padout           ;
+; |SIGNAL_LAMP|Q0[2]~output                         ; |SIGNAL_LAMP|Q0[2]~output                         ; o                ;
+; |SIGNAL_LAMP|Q0[2]                                ; |SIGNAL_LAMP|Q0[2]                                ; padout           ;
+; |SIGNAL_LAMP|Q0[1]~output                         ; |SIGNAL_LAMP|Q0[1]~output                         ; o                ;
+; |SIGNAL_LAMP|Q0[1]                                ; |SIGNAL_LAMP|Q0[1]                                ; padout           ;
+; |SIGNAL_LAMP|Q0[0]~output                         ; |SIGNAL_LAMP|Q0[0]~output                         ; o                ;
+; |SIGNAL_LAMP|Q0[0]                                ; |SIGNAL_LAMP|Q0[0]                                ; padout           ;
+; |SIGNAL_LAMP|Q1[2]~output                         ; |SIGNAL_LAMP|Q1[2]~output                         ; o                ;
+; |SIGNAL_LAMP|Q1[2]                                ; |SIGNAL_LAMP|Q1[2]                                ; padout           ;
+; |SIGNAL_LAMP|Q1[1]~output                         ; |SIGNAL_LAMP|Q1[1]~output                         ; o                ;
+; |SIGNAL_LAMP|Q1[1]                                ; |SIGNAL_LAMP|Q1[1]                                ; padout           ;
+; |SIGNAL_LAMP|Q1[0]~output                         ; |SIGNAL_LAMP|Q1[0]~output                         ; o                ;
+; |SIGNAL_LAMP|Q1[0]                                ; |SIGNAL_LAMP|Q1[0]                                ; padout           ;
+; |SIGNAL_LAMP|CLK~input                            ; |SIGNAL_LAMP|CLK~input                            ; o                ;
+; |SIGNAL_LAMP|CLK                                  ; |SIGNAL_LAMP|CLK                                  ; padout           ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |SIGNAL_LAMP|Q1[3]~output ; |SIGNAL_LAMP|Q1[3]~output ; o                ;
+; |SIGNAL_LAMP|Q1[3]        ; |SIGNAL_LAMP|Q1[3]        ; padout           ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |SIGNAL_LAMP|74161:inst1|f74161:sub|87 ; |SIGNAL_LAMP|74161:inst1|f74161:sub|87 ; q                ;
+; |SIGNAL_LAMP|Q1[3]~output              ; |SIGNAL_LAMP|Q1[3]~output              ; o                ;
+; |SIGNAL_LAMP|Q1[3]                     ; |SIGNAL_LAMP|Q1[3]                     ; padout           ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue May 28 00:24:03 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off LAMP -c LAMP
+Info: Using vector source file "C:/Users/lenovo/Desktop/LAMPP/SIGNAL_LAMP.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of SIGNAL_LAMP.vwf called LAMP.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.33 %
+Info: Number of transitions in simulation is 1793
+Info: Vector file SIGNAL_LAMP.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 180 megabytes
+    Info: Processing ended: Tue May 28 00:24:03 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
